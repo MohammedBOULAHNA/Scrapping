@@ -1,1 +1,48 @@
 
+
+## 1.recommender product scratch:
+  Word2vec exploits the sequential nature of text to create a word embedding. 
+  This very property got me thinking about non-text data that also has a sequential nature.
+  One such data is the purchases made by consumers on e-commerce sites. Most of the time, there is a pattern in the buying behavior of consumers.
+
+
+  If we can represent each of these products by a vector, then we can easily find similar products. So, if a user checks out a product online, we can easily recommend similar products using the vector similarity score between products.
+
+  Just imagine a consumer's purchase history as a sentence and the products as their words:
+
+  ![image.png](attachment:image.png)
+
+  > In this workshop, we will work on online shopping data by trying to build a content-based recommendation system using word2vec.
+
+## 2. Spark Recommendation : 
+ The Spark MLlib library for Machine Learning provides an implementation of collaborative filtering using Alternating Least Squares. The implementation in MLlib has these parameters: 
+
+
+<img src=https://upload.wikimedia.org/wikipedia/commons/5/52/Collaborative_filtering.gif />
+
+* numBlocks is the number of blocks used to parallelize computation (set to -1 to auto-configure).
+* rank is the number of latent factors in the model.
+* iterations is the number of iterations to run.
+* lambda specifies the regularization parameter in ALS.
+* implicitPrefs specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data.
+* alpha is a parameter applicable to the implicit feedback variant of ALS that governs the baseline confidence in preference observations.
+
+
+
+## 3. Log Analysis Pyspark.
+
+## 4. Preprocessing MovieLens.
+
+## 5. ABSA with_Spacy and TextBlob Sentiment analysis:
+-TextBlob is a library that provides out-of-the-box sentiment analysis. It has a bag-of-words approach, which means that it has a list of words such as "good", "bad" and "excellent" that have a sentiment score attached to them. It is also able to select modifiers (such as "not") and intensifiers (such as "very") that affect the sentiment score.  
+
+## 6. Logistic Regression based sentiment analysis :
+* Extract features for logistic regression 
+* Implement logistic regression from scratch
+* Apply LR for sentiment analysis 
+* Test your model 
+* error analysis
+## 7. IMDB-LSTM with CNN : 
+- This is a dataset of 25,000 movie reviews from IMDB, labeled by sentiment (positive / negative). The reviews have been pre-processed and each review is coded as a list of (integer) word indexes. For convenience, the words are indexed by their overall frequency in the dataset, so that, for example, the integer "3" codes the 3rd most frequent word in the data. 
+
+## 8. Exploring Data.
